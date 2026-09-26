@@ -7,7 +7,8 @@ let statusText2 = document.getElementById("status2");
 let statusText3 = document.getElementById("status3");
 
 // Initialize status messages for each checkbox
-statusText1.innerHTML = "checkbox 1 checked (default)"; // initial message
+statusText1.innerHTML =
+  'checkbox 1 checked <span class="defaultText">(default)</span>'; // initial message
 statusText2.innerHTML = "checkbox 2"; // initial message
 statusText3.innerHTML = "checkbox 3"; // initial message
 
@@ -47,9 +48,10 @@ const resetCheckboxes = () => {
   checkbox3.checked = checkboxObj.checkbox3;
 
   // Update status text for each checkbox
-  statusText1.innerHTML = `checkbox 1 checked (default)`;
-  statusText2.innerHTML = `checkbox 2`;
-  statusText3.innerHTML = `checkbox 3`;
+  statusText1.innerHTML =
+    'checkbox 1 checked <span class="defaultText">(default)</span>';
+  statusText2.innerHTML = "checkbox 2";
+  statusText3.innerHTML = "checkbox 3";
 
   display.innerHTML = "Click on a checkbox"; // Reset display message
   displayState(); // Refresh the state display
