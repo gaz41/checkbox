@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Check box</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Check box</h1>
+      </header>
+
+      <main>
+        <div class="checkboxContainer">
+          <div class="checkboxes">
+            <div class="checkbox-description">Click a checkbox</div>
+
+            <div class="checkboxInput">
+              <label for="checkbox1" class="checkbox-container">
+                <input type="checkbox" id="checkbox1" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <div id="status1"></div>
+            </div>
+
+            <div class="checkboxInput">
+              <label for="checkbox2" class="checkbox-container">
+                <input type="checkbox" id="checkbox2" />
+                <span class="checkmark"></span>
+              </label>
+              <div id="status2"></div>
+            </div>
+
+            <div class="checkboxInput">
+              <label for="checkbox3" class="checkbox-container">
+                <input type="checkbox" id="checkbox3" />
+                <span class="checkmark"></span>
+              </label>
+              <div id="status3"></div>
+            </div>
+
+            <!-- DISPLAY RESULT -->
+            <div id="checkboxText"></div>
+            <div id="checkboxState"></div>
+
+            <div id="resetBtn" class="resetBtn">reset</div>
+          </div>
+        </div>
+      </main>
+
+      <!-- COPYRIGHT NOTICE -->
+      <footer>
+        <div id="copy" class="copy"></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
